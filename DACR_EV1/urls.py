@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from DACR2 import views as v2
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('one/',v2.viewone),
+    path('two/',v2.viewtwo)
 ]
